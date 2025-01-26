@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Banking Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 font-sans">
+    <header class="flex justify-between items-center p-6">
+        <div class="flex items-center space-x-2">
+            <div class="text-xl font-bold text-blue-600">SBI</div>
+           <!-- <div class="text-xl text-gray-400">Bank</div> -->
+          
+        </div>
+        <div class="flex-grow flex justify-center">
+            <div class="flex items-center w-full max-w-lg space-x-2">
+                <input type="text" placeholder="Search..." class="flex-grow px-2 py-2 border border-pink-400 rounded-full focus:outline-none focus:ring-2 focus:ring-pink-400">
+                <button class="px-3 py-1 bg-pink-400 text-white rounded-full text-sm">Search</button>
+            </div>
+        </div>
+        <nav class="space-x-4">
+            <button class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Home</button>
+            <button class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Settings</button>
+            <button class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">About us</button>
+            <button class="px-3 py-1 bg-pink-400 text-white rounded-full text-sm">Help</button>
+            <button class="px-3 py-1 bg-pink-400 text-white rounded-full text-sm">Logout</button>
+        </nav>
+    </header>
+    
+   <main class="text-center py-12">
+    <marquee>
+        <div style="display: flex; gap:8px;">
+            <h1 class="text-4xl font-bold text-blue-600">This is a Demo</h1>
+            <h1  class="text-4xl font-bold text-pink-400">Banking Webpage of SBI</h1><hr/>
+        </div>
+    </marquee> 
+        
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 items-center">
+            <!-- Left Section -->
+            <div class="space-y-6 text-left px-6">
+                <div>
+                    <h2 class="text-lg font-bold text-blue-600 hover:text-pink-400">User Details</h2>
+                </div>
+                <div class="bg-gradient-to-r from-blue-500 to-pink-400 p-4 rounded-lg hover:bg-gradient-to-r hover:from-pink-400 hover:to-blue-500 transition duration-300">
+
+                   
+                    <p class="text-sm text-pink-800 mt-2 hover:text-blue-500">username: username123ex</p>
+                    <p class="text-sm text-pink-800 mt-2 hover:text-blue-500">DOBs: 01-01-1997</p>
+                    <p class="text-sm text-pink-800 mt-2 hover:text-blue-500">Aadhar number: 21345677777</p>
+                    <p class="text-sm text-pink-800 mt-2 hover:text-blue-500">Mobile number: 12344556789</p>
+                </div>
+               
+            </div>
+
+            <!-- Right Section -->
+            <div class="px-6">
+                <div class="relative rounded-lg " style="max-width: 400px; margin: 0 auto;">
+                    <img src="credit card.jpg" alt="Background" class="w-full h-full object-cover opacity-50">
+                    <div class="absolute inset-0 bg-gray-900 bg-opacity-70 text-white p-6 flex flex-col justify-between">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-lg text-blue-500 font-bold">SBI</h2>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <div class="bg-gray-700 inline-block p-6 rounded-lg">
+                                <p class="text-2xl font-mono">0123 4567 8910 XXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           
+            <section class="mt-16 px-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                    <div class="bg-gradient-to-r from-blue-500 to-pink-400 shadow rounded-lg p-4 text-center">
+                        <img src="gold.jpg" alt="Service 1" class="rounded-lg size-48">
+                        <h3 class="text-lg font-bold mt-4">Gold Loan</h3>
+                        <a href="https://sbi.co.in/web/personal-banking/loans/gold-loan" target="_blank" alt="error loading"  class="text-white mt-2">Know more</a>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-500 to-pink-400 shadow rounded-lg p-4 text-center">
+                        <img src="https://thumbs.dreamstime.com/b/life-insurance-concept-family-under-umbrella-life-insurance-concept-family-under-umbrella-213788643.jpg?w=768" alt="Service 2" class="rounded-lg size-48">
+                        <h3 class="text-lg font-bold mt-4">Health Insurance</h3>
+                        <a href="https://licindia.in/" target="_blank"  alt="error loading url" class="text-white mt-2">Click Here</a>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-500 to-pink-400 shadow rounded-lg p-4 text-center">
+                        <img src="https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2021/07/fixed-deposit-1627642644.jpg" target="_blank"  alt="Service 3" class="rounded-lg size-48">
+                        <h3 class="text-lg font-bold mt-4">Fixed Deposit</h3>
+                        <p class="text-white mt-2">Maximum Returns</p>
+                    </div>
+                   
+                </div>
+            </section>
+            <section class="mt-16 px-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Card Details</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                    <div class="bg-gradient-to-r from-pink-400 to-blue-500 shadow rounded-lg p-4 text-center">
+                        <img src="icon.png" alt="Service 1" class="rounded-lg size-48">
+                        <h3 class="text-lg font-bold mt-4">History</h3>
+                        <p class="text-white mt-2">Sent 5000</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-pink-400 to-blue-500 shadow rounded-lg p-4 text-center">
+                        <img src="icon.png" alt="Service 2" class="rounded-lg size-48">
+                        <h3 class="text-lg font-bold mt-4">Balance</h3>
+                        <a href="https://www.google.com/search?q=sbi+view+balance&sca_esv=860bc48fe52ca8cf&rlz=1C1JJTC_enIN1087IN1087&sxsrf=AHTn8zrgqs6iauEX5SmwwsNg7y4EFJJoew%3A1737869099588&ei=K8eVZ9XPI4i6seMPopnt4Qk&oq=sbi.i+view&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnNiaS5pIHZpZXcqAggBMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I5hxQkQRYvQ5wAXgAkAEAmAF2oAHZBKoBAzMuM7gBAcgBAPgBAZgCBqACmgTCAgsQABiABBiwAxixA8ICDhAuGIAEGLADGNEDGMcBwgIIEAAYgAQYsAPCAgUQABiABMICBBAAGB7CAgYQABgIGB7CAggQABgWGAoYHpgDAIgGAZAGCpIHAzMuM6AH1yM&sclient=gws-wiz-serp" target="_blank" alt="error loading" class="text-white mt-2">View Balance</a>
+                    </div>
+                    <div class="bg-gradient-to-r from-pink-400 to-blue-500 shadow rounded-lg p-4 text-center">
+                        <img src="icon.png" alt="Service 3" class="rounded-lg size-48">
+                        <h3 class="text-lg font-bold mt-4">Expire Date</h3>
+                        <p class="text-white mt-2">08-12-2027</p>
+                    </div>
+                   
+                </div>
+            </section>
+        </main>
+            <footer class="text-center mt-16 py-4 bg-gradient-to-r from-blue-500 to-pink-400 font-sans text-white">
+                <p>&copy; 2025.Created by Uday Dasari.</p>
+            </footer>
+        </body>
+        </html>
+        
